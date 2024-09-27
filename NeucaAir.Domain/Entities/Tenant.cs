@@ -11,9 +11,9 @@
         public Guid TenantId { get; }
         public TenantGroup Group { get; }
         public string Name { get; }
-        public DateTimeOffset Birthday { get; }
+        public DateOnly Birthday { get; }
 
-        public Tenant(string name, DateTimeOffset birthday, TenantGroup group)
+        public Tenant(string name, DateOnly birthday, TenantGroup group)
         {
             TenantId = Guid.NewGuid();
             Group = group;

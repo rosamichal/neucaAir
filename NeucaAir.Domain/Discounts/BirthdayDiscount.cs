@@ -6,8 +6,13 @@ namespace NeucaAir.Domain.Discounts
     {
         public override bool IsEligible(Ticket ticket)
         {
-            return ticket.Tenant.Birthday.Date.Month == ticket.Flight.DepartureTime.Date.Month 
-                && ticket.Tenant.Birthday.Date.Day == ticket.Flight.DepartureTime.Date.Day;
+            return ticket.Tenant.Birthday.Month == ticket.Flight.DepartureTime.Date.Month 
+                && ticket.Tenant.Birthday.Day == ticket.Flight.DepartureTime.Date.Day;
+        }
+
+        public override string ToString() 
+        {
+            return "Zniżka urodzinowa";
         }
     }
 }

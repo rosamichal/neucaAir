@@ -6,8 +6,13 @@ namespace NeucaAir.Domain.Discounts
     {
         public override bool IsEligible(Ticket ticket)
         {
-            return ticket.Flight.To == "Africa" 
+            return ticket.Flight.To == "Afryka" 
                 && ticket.Flight.DepartureTime.DayOfWeek == DayOfWeek.Thursday;
+        }
+
+        public override string ToString()
+        {
+            return "Zniżka Afryka w czwartek";
         }
     }
 }
