@@ -14,7 +14,7 @@ namespace NeucaAir.ConsoleApp
 
             var flightId = new FlightId("ABC12345XYZ");
             var departureTime = new DateTimeOffset(2024, 10, 3, 12, 30, 00, new TimeSpan(1, 0, 0));
-            var flight = new Flight(flightId, "Warszawa", "Afryka", departureTime, departureTime.DayOfWeek, 30_00);
+            var flight = new Flight(flightId, "Warszawa", "Afryka", departureTime, 30_55);
 
             var discountService = new DiscountService();
             var discountCriteria = new List<DiscountCriteriaBase>() { new BirthdayDiscount(), new AfricaThursdayDiscount() };
@@ -33,8 +33,8 @@ namespace NeucaAir.ConsoleApp
                                 Imię: {ticket.Tenant.Name} (grupa {ticket.Tenant.Group})
                                 Lot {ticket.Flight.FlightId.Id} Z: {ticket.Flight.From} DO: {ticket.Flight.To}
                                 Data lotu: {ticket.Flight.DepartureTime.ToString()}, {ticket.Flight.DayOfDeparture}
-                                Cena podstawowa: {ticket.Flight.BasePriceInCent / 100:.00} EUR
-                                Cena po rabatach: {ticket.FinalPriceInCent / 100:.00} EUR
+                                Cena podstawowa: {ticket.Flight.BasePriceInCent / 100m:.00} EUR
+                                Cena po rabatach: {ticket.FinalPriceInCent / 100m:.00} EUR
                                 Zastosowane zniżki: {string.Join(", ", ticket.GetAppliedDiscounts().Select(d => d.ToString()))}
                                 ---------------------------------------------------------------------
                                 """);

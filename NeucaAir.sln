@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeucaAir.Domain", "NeucaAir.Domain\NeucaAir.Domain.csproj", "{5B889FE7-6962-42B9-A590-D50D897D6E8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeucaAir.Domain", "NeucaAir.Domain\NeucaAir.Domain.csproj", "{5B889FE7-6962-42B9-A590-D50D897D6E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeucaAir.ConsoleApp", "NeucaAir.ConsoleApp\NeucaAir.ConsoleApp.csproj", "{F6368BAC-ED89-4A4F-A7AA-5718BE0C6D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeucaAir.ConsoleApp", "NeucaAir.ConsoleApp\NeucaAir.ConsoleApp.csproj", "{F6368BAC-ED89-4A4F-A7AA-5718BE0C6D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeucaAir.Domain.Tests", "NeucaAir.Domain.Tests\NeucaAir.Domain.Tests.csproj", "{82650405-0607-4303-9E42-DEA2AEB0093F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F6368BAC-ED89-4A4F-A7AA-5718BE0C6D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6368BAC-ED89-4A4F-A7AA-5718BE0C6D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6368BAC-ED89-4A4F-A7AA-5718BE0C6D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82650405-0607-4303-9E42-DEA2AEB0093F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82650405-0607-4303-9E42-DEA2AEB0093F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82650405-0607-4303-9E42-DEA2AEB0093F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82650405-0607-4303-9E42-DEA2AEB0093F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
